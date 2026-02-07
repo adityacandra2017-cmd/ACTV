@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTV - Portal Berita Indonesia & Dunia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .animate-marquee { animation: marquee 25s linear infinite; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <div class="bg-red-700 text-white py-2 overflow-hidden sticky top-0 z-[60]">
+        <div class="whitespace-nowrap animate-marquee inline-block">
+            <span class="mx-4 font-bold">TERKINI:</span> 
+            Dua Oknum Polisi di Jambi Resmi Dipecat Terkait Kasus Remaja 18 Tahun... 
+            <span class="mx-4">|</span>
+            Update Geopolitik Dunia: Ketegangan Global Meningkat Hari Ini...
+            <span class="mx-4">|</span>
+            Aplikasi Gaspol! Siap Diluncurkan di Palembang Pekan Depan...
+        </div>
+    </div>
+
+    <nav class="bg-white border-b border-gray-200 py-4 shadow-sm">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-3xl font-black italic tracking-tighter text-red-700">NUSA<span class="text-black">WARTA</span></h1>
+            <div class="hidden md:flex space-x-8 font-bold text-gray-700 uppercase text-sm">
+                <a href="#" class="hover:text-red-700">Nasional</a>
+                <a href="#" class="hover:text-red-700">Dunia</a>
+                <a href="#" class="hover:text-red-700">Ekonomi</a>
+                <a href="#" class="hover:text-red-700">Viral</a>
+            </div>
+            <button class="bg-black text-white px-5 py-2 rounded-full text-xs font-bold">LIVE TV</button>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-10">
+        <div class="flex flex-wrap -mx-4">
+            
+            <div class="w-full lg:w-2/3 px-4 mb-8">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1585829365234-781fcd04c838?auto=format&fit=crop&w=1200&q=80" class="w-full h-96 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute bottom-0 p-8 bg-gradient-to-t from-black via-transparent to-transparent w-full text-white">
+                        <span class="bg-red-600 px-3 py-1 rounded-md text-xs font-bold uppercase">Headline Dunia</span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-2">Analisis Geopolitik 2026: Indonesia di Tengah Pusaran Konflik Global</h2>
+                        <p class="text-gray-300 text-sm">Redaksi NusaWarta | 10 Menit yang lalu</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/3 px-4">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <h3 class="text-xl font-black border-b-4 border-red-700 inline-block mb-6">TRENDING VIRAL</h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <span class="text-4xl font-black text-gray-200">01</span>
+                            <p class="font-bold leading-tight hover:text-red-700 cursor-pointer">Update Kasus Jambi: PTDH Resmi Dijatuhkan untuk Dua Oknum Polisi.</p>
+                        </div>
+                        <hr>
+                        <div class="flex gap-4 items-start">
+                            <span class="text-4xl font-black text-gray-200">02</span>
+                            <p class="font-bold leading-tight hover:text-red-700 cursor-pointer">Warga Palembang Heboh dengan Munculnya Aplikasi Ojol Lokal 'Gaspol!'.</p>
+                        </div>
+                        <hr>
+                        <div class="flex gap-4 items-start">
+                            <span class="text-4xl font-black text-gray-200">03</span>
+                            <p class="font-bold leading-tight hover:text-red-700 cursor-pointer">Analisis Pakar Hukum Terkait Kasus Pemerkosaan Remaja 18 Tahun.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-black text-white py-12 text-center mt-10">
+        <p class="text-gray-400">© 2026 NUSAWARTA - Jurnalisme Berintegritas & Cepat.</p>
+    </footer>
+
+</body>
+</html>
