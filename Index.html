@@ -3,80 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTV - Portal Berita Indonesia & Dunia</title>
+    <title>ACTV - Detail Berita Profesional</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
-        .animate-marquee { animation: marquee 25s linear infinite; }
+        body { font-family: 'Inter', sans-serif; }
+        .content-body { font-family: 'Merriweather', serif; line-height: 1.8; }
     </style>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-white text-gray-900">
 
-    <div class="bg-red-700 text-white py-2 overflow-hidden sticky top-0 z-[60]">
-        <div class="whitespace-nowrap animate-marquee inline-block">
-            <span class="mx-4 font-bold">TERKINI:</span> 
-            Dua Oknum Polisi di Jambi Resmi Dipecat Terkait Kasus Remaja 18 Tahun... 
-            <span class="mx-4">|</span>
-            Update Geopolitik Dunia: Ketegangan Global Meningkat Hari Ini...
-            <span class="mx-4">|</span>
-            Aplikasi Gaspol! Siap Diluncurkan di Palembang Pekan Depan...
-        </div>
-    </div>
-
-    <nav class="bg-white border-b border-gray-200 py-4 shadow-sm">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <h1 class="text-3xl font-black italic tracking-tighter text-red-700">ACTV<span class="text-black">ACTV</span></h1>
-            <div class="hidden md:flex space-x-8 font-bold text-gray-700 uppercase text-sm">
-                <a href="#" class="hover:text-red-700">Nasional</a>
-                <a href="#" class="hover:text-red-700">Dunia</a>
-                <a href="#" class="hover:text-red-700">Ekonomi</a>
-                <a href="#" class="hover:text-red-700">Viral</a>
-            </div>
-            <button class="bg-black text-white px-5 py-2 rounded-full text-xs font-bold">LIVE TV</button>
+    <nav class="bg-white border-b border-gray-200 py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-20 flex justify-between items-center">
+            <h1 class="text-2xl font-black italic text-red-700 tracking-tighter">ACTV<span class="text-black">ACTV</span></h1>
+            <a href="index.html" class="text-sm font-bold text-gray-500 hover:text-red-700">← KEMBALI KE BERANDA</a>
         </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-10">
-        <div class="flex flex-wrap -mx-4">
+    <main class="container mx-auto px-4 md:px-20 py-10 lg:flex lg:gap-12">
+        
+        <article class="lg:w-2/3">
+            <span class="bg-red-700 text-white text-xs font-bold px-3 py-1 rounded uppercase">Kriminal & Keadilan</span>
             
-            <div class="w-full lg:w-2/3 px-4 mb-8">
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden relative group">
-                    <img src="https://images.unsplash.com/photo-1585829365234-781fcd04c838?auto=format&fit=crop&w=1200&q=80" class="w-full h-96 object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute bottom-0 p-8 bg-gradient-to-t from-black via-transparent to-transparent w-full text-white">
-                        <span class="bg-red-600 px-3 py-1 rounded-md text-xs font-bold uppercase">Headline Dunia</span>
-                        <h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-2">Analisis Geopolitik 2026: Indonesia di Tengah Pusaran Konflik Global</h2>
-                        <p class="text-gray-300 text-sm">Redaksi ACTV| 10 Menit yang lalu</p>
-                    </div>
+            <h1 class="text-3xl md:text-5xl font-black mt-4 leading-tight">
+                Keadilan Tak Berhenti di PTDH: Menanti Jeruji Besi Bagi Dua Mantan Polisi di Jambi
+            </h1>
+
+            <div class="flex items-center gap-4 mt-6 text-sm text-gray-500 border-y py-4 border-gray-100">
+                <img src="https://ui-avatars.com/api/?name=Redaksi+NusaWarta&background=random" class="w-10 h-10 rounded-full">
+                <div>
+                    <p class="font-bold text-gray-900">Oleh: Tim Redaksi ACTV</p>
+                    <p>Minggu, 8 Februari 2026 | 09:45 WIB</p>
                 </div>
             </div>
 
-            <div class="w-full lg:w-1/3 px-4">
-                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <h3 class="text-xl font-black border-b-4 border-red-700 inline-block mb-6">TRENDING VIRAL</h3>
-                    <div class="space-y-6">
-                        <div class="flex gap-4 items-start">
-                            <span class="text-4xl font-black text-gray-200">01</span>
-                            <p class="font-bold leading-tight hover:text-red-700 cursor-pointer">Update Kasus Jambi: PTDH Resmi Dijatuhkan untuk Dua Oknum Polisi.</p>
-                        </div>
-                        <hr>
-                        <div class="flex gap-4 items-start">
-                            <span class="text-4xl font-black text-gray-200">02</span>
-                            <p class="font-bold leading-tight hover:text-red-700 cursor-pointer">Warga Palembang Heboh dengan Munculnya Aplikasi Ojol Lokal 'Gaspol!'.</p>
-                        </div>
-                        <hr>
-                        <div class="flex gap-4 items-start">
-                            <span class="text-4xl font-black text-gray-200">03</span>
-                            <p class="font-bold leading-tight hover:text-red-700 cursor-pointer">Analisis Pakar Hukum Terkait Kasus Pemerkosaan Remaja 18 Tahun.</p>
-                        </div>
-                    </div>
-                </div>
+            <figure class="mt-8">
+                <img src="jambi-ptdh.jpg" class="w-full rounded-xl shadow-lg" alt="Ilustrasi Kasus Jambi">
+                <figcaption class="text-sm text-gray-500 mt-3 italic text-center">
+                    Ilustrasi: Penegakan hukum tegas terhadap oknum pelanggar kode etik. (Foto: AI Generated/NusaWarta)
+                </figcaption>
+            </figure>
+
+            <div class="content-body text-lg text-gray-800 mt-10 space-y-6">
+                <p class="font-bold text-xl leading-relaxed">
+                    <span class="text-5xl font-black float-left mr-3 mt-1 text-red-700">J</span>AMBI — Langkah tegas diambil Kepolisian Daerah (Polda) Jambi dengan resmi memecat dua oknum anggotanya melalui proses Pemberhentian Tidak Dengan Hormat (PTDH).
+                </p>
+                
+                <p>
+                    Keputusan ini diambil setelah sidang Komisi Kode Etik Polri (KKEP) menyatakan keduanya terbukti melakukan pelanggaran berat yang mencederai martabat institusi. Namun, bagi keluarga korban, perjuangan belum berakhir.
+                </p>
+
+                <blockquote class="border-l-4 border-red-700 pl-6 my-10 italic text-2xl font-light text-gray-600">
+                    "Kami tidak hanya ingin mereka dipecat. Kami ingin mereka dihukum maksimal sesuai UU Tindak Pidana Kekerasan Seksual (TPKS)."
+                </blockquote>
+
+                <p>
+                    Saat ini, publik tengah mengawal proses pidana umum yang sedang berjalan di Pengadilan Negeri Jambi. Dukungan mengalir deras dari netizen Indonesia yang menuntut transparansi penuh dalam kasus ini.
+                </p>
+
+                <h3 class="text-2xl font-bold text-black mt-8">Pendampingan Psikologis Korban</h3>
+                <p>
+                    Unit PPA (Pelayanan Perempuan dan Anak) saat ini terus melakukan pendampingan intensif kepada korban yang mengalami trauma mendalam. Tim psikolog menyebutkan bahwa dukungan moral dari masyarakat sangat membantu proses pemulihan.
+                </p>
             </div>
 
-        </div>
+            <div class="mt-12 pt-6 border-t border-gray-100 flex gap-4 items-center">
+                <span class="font-bold text-sm uppercase">Bagikan:</span>
+                <button class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-bold">WhatsApp</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Facebook</button>
+                <button class="bg-black text-white px-4 py-2 rounded-lg text-sm font-bold">Twitter/X</button>
+            </div>
+        </article>
+
+        <aside class="lg:w-1/3 mt-16 lg:mt-0">
+            <div class="sticky top-24">
+                <h4 class="text-lg font-black border-b-4 border-red-700 pb-2 mb-6 uppercase">Berita Terkait</h4>
+                
+                <div class="space-y-8">
+                    <div class="group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=400&q=80" class="rounded-lg mb-2">
+                        <h5 class="font-bold group-hover:text-red-700 transition">Nasib Penjual Es Gabus: Polisi Resmi Meminta Maaf</h5>
+                        <p class="text-xs text-gray-500 mt-1">2 Jam Lalu</p>
+                    </div>
+                    
+                    <div class="group cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=400&q=80" class="rounded-lg mb-2">
+                        <h5 class="font-bold group-hover:text-red-700 transition">Update Harga Emas: Lonjakan Tertinggi di Awal Februari</h5>
+                        <p class="text-xs text-gray-500 mt-1">5 Jam Lalu</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-yellow-400 p-6 rounded-2xl shadow-inner">
+                    <h5 class="font-black text-xl mb-2 italic">GASPOL!</h5>
+                    <p class="text-sm font-bold mb-4">Mau pergi tanpa ribet? Coba aplikasi ojol asli wong kito!</p>
+                    <button class="bg-black text-white w-full py-3 rounded-xl font-bold">DOWNLOAD SEKARANG</button>
+                </div>
+            </div>
+        </aside>
+
     </main>
 
-    <footer class="bg-black text-white py-12 text-center mt-10">
-        <p class="text-gray-400">© 2026 ACTV - Jurnalisme Berintegritas & Cepat.</p>
+    <footer class="bg-gray-100 py-12 mt-20 border-t">
+        <div class="container mx-auto px-4 md:px-20 text-center">
+            <h2 class="text-2xl font-black italic text-red-700">ACTV<span class="text-black">ACTV</span></h2>
+            <p class="text-gray-500 text-sm mt-4">© 2026 ACTV - Jurnalisme Berintegritas & Cepat.</p>
+        </div>
     </footer>
 
 </body>
